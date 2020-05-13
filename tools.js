@@ -162,7 +162,7 @@ module.exports = {
       })
       .catch(err => {
         console.log(chalk.red("Error: Resource "+ resource_user + "/" + resource_name + " Not Found or not possible to update !"));
-        console.log("\n");
+        console.log("\n" + err);
         reject("Error: Resource "+ resource_user + "/" + resource_name + " Not Found or not possible to update !");
         return;
       });
